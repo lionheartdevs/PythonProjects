@@ -706,6 +706,7 @@ def Game():
         print("Tip 2: If you have the Wisdom and Speed you can run from a battle. You keep items in treasure chests")
         print('Tip 3: When you die you lose everything. A good start in items helps with end game.')
         print('Have Fun!')
+        Game()
     else:
         game_graphics.StartScreen()
         opening = input('--> ')
