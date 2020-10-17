@@ -1,0 +1,8 @@
+def sum_digits(n):
+  if n < 0:
+    ValueError("Inputs 0 or greater only!")
+  result = n % 10
+  print(result)
+  if n <= 1:
+    return n
+  return result + sum_digits(n // 10)
