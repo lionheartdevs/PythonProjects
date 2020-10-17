@@ -1,0 +1,13 @@
+def fibonacci(n):
+  fib_sum = [ 0 , 1, ]
+  if n < 0: 
+    ValueError("Input 0 or greater only")
+  if n == 0:
+    return 0
+  if n == 1:
+    return 1
+  loop = -1
+  while (len(fib_sum) < n + 1 ):
+    fib_sum.append(fib_sum[loop + 1] + fib_sum[loop + 2])
+    loop += 1
+  return fib_sum[n]
