@@ -1,0 +1,16 @@
+def factorial(n):
+  Sum = 0
+  if n < 0:
+    ValueError('Inputs 0 or greater only')
+  if n == 0:
+    return 1
+  if n == 1: 
+    return Sum
+  loop = n 
+  while (n > 2):
+    print(n)
+    print('In while')
+    Sum += (n * (n - 1))
+    n -= 1
+    print(Sum)
+  return Sum
